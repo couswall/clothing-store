@@ -1,0 +1,56 @@
+.form-add-to-cart label {
+    margin-bottom: 8px;
+    font-family: var(--font);
+    display: block;
+}
+
+.form-add-to-cart select{
+    width: 100%;
+    font-family: var(--font);
+    padding: 8px 12px;
+    margin-bottom: 15px;
+}
+
+.form-add-to-cart .quantity{
+    width: 60px;
+    height: 38px;
+    padding: 8px 6px 8px 12px;
+    font-family: var(--font);
+    margin-bottom: 20px;
+}
+
+.form-add-to-cart .btn{
+    display: block;
+    text-transform: uppercase;
+}
+
+.form-add-to-cart .btn.btn-primary.adding-to-cart{
+    background-color: var(--text-light-color);
+}
+
+
+
+
+
+/* ===== BREAKPOINTS ======= */
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+
+   .form-add-to-cart label {
+       font-size: 14px;
+   }
+
+   .form-add-to-cart select{
+       padding: 5px 10px;
+   }
+   
+   .form-add-to-cart .quantity{
+       height: 30px;
+   }
+
+   .form-add-to-cart .btn{
+       padding: 8px 10px;
+   }
+   
+}

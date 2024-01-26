@@ -68,38 +68,6 @@
     line-height: 24px;
 }
 
-/* Form */
-
-.form-quick-view label {
-    margin-bottom: 8px;
-    font-family: var(--font);
-    display: block;
-}
-
-.form-quick-view select{
-    width: 100%;
-    font-family: var(--font);
-    padding: 8px 12px;
-    margin-bottom: 15px;
-}
-
-.form-quick-view .quantity{
-    width: 60px;
-    height: 38px;
-    padding: 8px 6px 8px 12px;
-    font-family: var(--font);
-    margin-bottom: 20px;
-}
-
-.form-quick-view .btn{
-    display: block;
-    text-transform: uppercase;
-}
-
-.form-quick-view .btn.btn-primary.adding-to-cart{
-    background-color: var(--text-light-color);
-}
-
 
 /* Close quick view button and icon */
 .close-quick-view{
@@ -118,9 +86,6 @@
     color: var(--primary-color);
     font-size: 30px;
 }
-
-
-
 
 
 
@@ -163,23 +128,5 @@
         font-size: 13px;
     }
 
-
-    /* Form */
-    .form-quick-view label {
-        font-size: 14px;
-    }
-
-    .form-quick-view select{
-        padding: 5px 10px;
-    }
-    
-    .form-quick-view .quantity{
-        height: 30px;
-    }
-
-    .form-quick-view .btn{
-        padding: 8px 10px;
-    }
-    
  }
 

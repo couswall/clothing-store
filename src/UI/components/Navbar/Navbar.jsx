@@ -20,7 +20,7 @@ export const Navbar = () => {
 
     useEffect( () => {
         calculateCartItems();
-    }, [cart])
+    }, [ cart ])
 
     const onHandleNavbar = () => {
         if ( !isNavBarActive ) return;
