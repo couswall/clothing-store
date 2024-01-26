@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
@@ -8,9 +8,19 @@ import { CartContext } from "../../../context";
 
 export const Navbar = () => {
 
-    const { showCart, setShowCart } = useContext( CartContext );
+    const { showCart, setShowCart, cart } = useContext( CartContext );
     const [ isNavBarActive, setIsNavBarActive ] = useState(false);
+    const [ quantityCart, setQuantityCart ] = useState(0);
     
+    const calculateCartItems = () => {
+        const updatedQuantityItems = ( cart.map( items => items.quantity ) ).reduce( ( a,b ) => a + b, 0);
+        
+        setQuantityCart( updatedQuantityItems );
+    }
+
+    useEffect( () => {
+        calculateCartItems();
+    }, [cart])
 
     const onHandleNavbar = () => {
         if ( !isNavBarActive ) return;
@@ -43,16 +53,19 @@ export const Navbar = () => {
                     </ul>
                 </nav>
 
-                <div className="icons-nav-container">
+                <div className="icons-nav-container flex">
                    <FaSearch  className="navbar-icon" />
-                   <FaCartShopping 
-                        className="navbar-icon"
-                        onClick={() => setShowCart(!showCart)}
-                    />
+
+                   <button className="navbar-icon cart-button" onClick={() => setShowCart(!showCart)}>
+                        <FaCartShopping className="cart-icon"/>
+                        <span className="cart-quantity">{quantityCart}</span>
+                   </button>
+                   
                    <FaBars 
-                        className="navbar-icon burger-icon"
+                        className="navbar-icon burger-icon"  
                         onClick={() => { setIsNavBarActive(!isNavBarActive) }}
                     />
+                
                 </div>
             </div>
         </header>
