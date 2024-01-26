@@ -66,6 +66,25 @@
 
 
 
+/*  Faq styles  */
+.faq-header{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.faq-header .btn{
+    margin-right: 5px;
+    font-weight: 600;
+    padding: 9px 28px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    border-radius: 0px;
+}
+
+.faq-header .btn.active{
+    border-bottom: 1px solid var(--primary-color);
+}
+
 
 
 
