@@ -50,7 +50,6 @@ export const cartReducer = ( state = [], action ) => {
         //Delete item 
         case types.removeItem: {
             
-            console.log( {id: action.payload.id, size: action.payload.size })
             return state.filter( item => item.id !== action.payload.id || item.size !== action.payload.size );
         }
 

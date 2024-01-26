@@ -1,3 +1,4 @@
+import { AddToCartForm } from '../../UI/components';
 
 import { ScrollRestoration, useParams } from 'react-router-dom';
 import './ProductView.css';
@@ -16,21 +17,36 @@ export const ProductView = () => {
   return (
     <>
           <section className='product-view section'>
-              <div className="container grid">
+              <div className="container">
+                <div className="product-wrapper grid">
+                  <div className="product-image-container">
+                    <img src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={item.description} />
+                  </div>
 
-                <div className="product-image-container">
-                  <img src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={item.description} />
-                </div>
+                  <div className="product-information-wrapper">
+                    <h2 className="product-title">{item.description}</h2>
+                    <p className="product-price">$ {(item.price).toFixed(2)} USD</p>
+                    <div className="line-price"></div>
+                    <p className="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, maiores nostrum! Molestias perspiciatis atque deserunt?.</p>
 
-                <div className="product-information-wrapper">
-                  <h3 className="product-title">{item.description}</h3>
-                  <p className="product-price">$ {(item.price).toFixed(2)} USD</p>
-                  <div className="line-price"></div>
+                  
+                  {
+                    <AddToCartForm item={ item }/>
+                  }
+                  </div>
                 </div>
+                
               </div>
-
-              <ScrollRestoration/>
           </section>
+                  
+          <section className='faq-product-section section'>
+            <div className="container">
+                  
+            </div>
+          </section>
+        
+        
+        <ScrollRestoration/>
     </>
   )
 }
