@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaSearch, FaBars } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import './Navbar.css';
 import { Cart } from "../Cart/Cart";
+import { CartContext } from "../../../context";
 
 export const Navbar = () => {
 
+    const { showCart, setShowCart } = useContext( CartContext );
     const [ isNavBarActive, setIsNavBarActive ] = useState(false);
-    const [showCart, setShowCart] = useState(false);
+    
 
     const onHandleNavbar = () => {
         if ( !isNavBarActive ) return;
@@ -56,7 +58,7 @@ export const Navbar = () => {
         </header>
 
         {
-           ( showCart ) && <Cart showCart = { showCart } setShowCart= { setShowCart }/>
+           ( showCart ) && <Cart/>
         }
 
         

@@ -4,9 +4,9 @@ import './Cart.css';
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 
-export const Cart = ({ setShowCart, showCart }) => {
+export const Cart = () => {
 
-  const { cart, onDeleteItem } = useContext( CartContext );
+  const { cart, onDeleteItem, showCart, setShowCart } = useContext( CartContext );
   const [ total, setTotal ] = useState(0);
 
   const [ animationCart, setAnimationCart ] = useState('animate__fadeInRight animate__faster');
@@ -29,6 +29,7 @@ export const Cart = ({ setShowCart, showCart }) => {
     calcualteTotal();
   }, cart )
 
+  // Hide Cart animation
   const hide = async (ms) => {
       setAnimationCart('animate__fadeOutRight animate__faster');
       setAnimationOverlay('animate__fadeOut animate__faster');

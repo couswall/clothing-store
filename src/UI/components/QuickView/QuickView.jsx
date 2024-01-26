@@ -1,23 +1,31 @@
 import { IoCloseSharp } from "react-icons/io5";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import './QuickView.css'
 import { CartContext } from "../../../context";
 import { useForm } from "../../../hooks/useForm";
 
 export const QuickView = ({ item, setShowQuickView }) => {
 
-    const { onAddItem } = useContext( CartContext );
+    const { onAddItem, setShowCart } = useContext( CartContext );
+    const [addToCart, setAddToCart] = useState(false);
     const { quantity, size: formSize , onInputChange, onResetForm } = useForm({
         quantity: 1,
         size: ''
-    })
+    });
     
     const { id, productName, productNumber, description, genre, price, size: sizes, } = item;
 
 
-    const onSubmitForm = (e) => {
+    const onSubmitForm = async (e) => {
         e.preventDefault();
         onAddItem( { ...item, size: formSize, quantity: parseInt(quantity), currentPrice: price * parseInt(quantity )} );
+        setAddToCart(true);
+        setShowCart( true );
+
+        await new Promise( r => setTimeout(r, 1000));
+
+        setAddToCart(false);
+
     }
 
   return (
@@ -71,10 +79,15 @@ export const QuickView = ({ item, setShowQuickView }) => {
                     />
 
                     <button 
-                        className="btn btn-primary"
+                        className= {`btn btn-primary ${ ( addToCart ) ? 'adding-to-cart' : ''}`}
                         type="submit"
+                        disabled = { addToCart }
                     >
-                        Add to cart
+                        {
+                            ( addToCart ) 
+                                ? 'ADDING TO CART...'
+                                : 'ADD TO CART'
+                        }
                     </button>
                 </form>    
 

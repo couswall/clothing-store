@@ -96,6 +96,10 @@
     text-transform: uppercase;
 }
 
+.form-quick-view .btn.btn-primary.adding-to-cart{
+    background-color: var(--text-light-color);
+}
+
 
 /* Close quick view button and icon */
 .close-quick-view{
