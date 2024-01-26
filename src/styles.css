@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'Poppins', sans-serif;
+    --background-color: #fff5e067;
+    --primary-color: #141E46;
+    --secondary-color: #BB2525;
+    --light-secondary: #FF6969;
+    --text-light-color: #717177;
+    --secondary-light-color: #919197;
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--background-color);
+}
+
+h1, h2 {
+    font-weight: 500;
+    margin: 10px 0;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+    width: 100%;
+}
+
+
+/* ============= UTILITIES ============== */
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 100px;
+}
+
+/* ----------BUTTONS ----- */
+.btn{
+    font-family: var(--font);
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    filter: none;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover{
+    background-color: #253780;
+}
+
+/* --FONTS-- */
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+
+/* ============= BREAKPOINTS ============== */
+
+
+/* // X-Large devices (large desktops, less than 1400px) 
+@media (max-width: 1399.98px) { }*/
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+
+
+
+
+
+

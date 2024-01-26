@@ -1,0 +1,120 @@
+
+.categories-wrapper.grid{
+    grid-template-rows: repeat(8, 100px);
+    justify-items: center;
+}
+
+.category-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.category-background,
+.category-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.category-overlay{
+    background-color: rgba(0,0,0, 0.28);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.category-background{
+    transition: all 0.2s ease-in;
+    z-index: 9;
+}
+
+.category-overlay.flex{
+    justify-content: end;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.category-overlay p,
+.category-overlay h3{
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.category-overlay h3{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.category-overlay p{
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 500;
+    padding-bottom:3px;
+    background-image: linear-gradient(#ffffff 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+
+
+.category-container:hover .category-overlay p {
+    background-position: 100% 100%; /*OR bottom right*/
+     background-size: 100% 1px;
+}
+
+.category-container:hover  .category-background {
+    transform: scale(1) !important;
+}
+
+
+.category-container:first-child{
+    grid-row: 1/6;
+}
+
+.category-container:nth-child(2){
+    grid-row: 1/5;
+}
+
+.category-container:nth-child(3){
+    grid-row: 6/9;
+}
+.category-container:last-child{
+    grid-row: 5/9;
+}
+
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+
+    .categories-wrapper.grid{
+        grid-template-rows: repeat(4, minmax(300px,500px)); 
+        grid-template-columns: 1fr;
+    }
+
+    .category-container:nth-child(-n + 4){
+        grid-row: auto;
+    }
+
+
+ }
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+    .categories-wrapper.grid{
+        grid-template-rows: repeat(4, minmax(250px,300px)); 
+        grid-template-columns: 1fr;
+    }
+}
