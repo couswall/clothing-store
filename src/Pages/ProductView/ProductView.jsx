@@ -1,5 +1,5 @@
 
-import { useParams } from 'react-router-dom';
+import { ScrollRestoration, useParams } from 'react-router-dom';
 import './ProductView.css';
 import { getItemByProductNumber } from '../../helpers/getItemByProductNumber';
 
@@ -28,6 +28,8 @@ export const ProductView = () => {
                   <div className="line-price"></div>
                 </div>
               </div>
+
+              <ScrollRestoration/>
           </section>
     </>
   )
