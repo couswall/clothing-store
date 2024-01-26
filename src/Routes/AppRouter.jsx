@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'; 
-import { AboutPage, ContactPage, ErrorPage, Homepage, MainApp } from '../Pages';
+import { AboutPage, ContactPage, ErrorPage, Homepage, MainApp, ProductView } from '../Pages';
 
 const routesConfig = createBrowserRouter([
     {
@@ -18,6 +18,10 @@ const routesConfig = createBrowserRouter([
             {
                 path: "contact",
                 element: <ContactPage/>
+            },
+            {
+                path: "product/:productNumber",
+                element: <ProductView/>
             }
         ]
     }

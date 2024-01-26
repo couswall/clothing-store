@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { QuickView } from "../QuickView/QuickView";
 import { FaSearchPlus } from "react-icons/fa";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
@@ -64,17 +65,19 @@ export const Carousel = ({ title, listItems }) => {
                                     onClick={ () => onShowQuickView( item ) }>
                                         <FaSearchPlus className="quick-view-icon"/>
                                 </button>
-                                <article className='item-container flex'>
-                                    <div className="img-container">
-                                        <img src={`./assets/${ item.genre }/${ item.productName }.jpg`} alt={ item.description } />
-                                        <div className="overlay-product"></div>
-                                    </div>
+                                <Link to={`/product/${ item.productNumber }`}>
+                                    <article className='item-container flex'>
+                                        <div className="img-container">
+                                            <img src={`./assets/${ item.genre }/${ item.productName }.jpg`} alt={ item.description } />
+                                            <div className="overlay-product"></div>
+                                        </div>
 
-                                      <div className="item-information">
-                                        <h4 className='item-name'>{ item.description }</h4>
-                                        <p className='price text-center'>${ (item.price).toFixed(2) } USD</p>
-                                    </div>
-                                </article>
+                                        <div className="item-information">
+                                            <h4 className='item-name'>{ item.description }</h4>
+                                            <p className='price text-center'>${ (item.price).toFixed(2) } USD</p>
+                                        </div>
+                                    </article>
+                                </Link>
                             </SwiperSlide>
                         ))
                     }
