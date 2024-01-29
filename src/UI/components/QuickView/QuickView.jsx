@@ -21,7 +21,7 @@ export const QuickView = ({ item, setShowQuickView }) => {
             </button>
             <div className="quick-img flex">
                 <div className="quick-img-container">
-                    <img src={`./assets/${ genre }/${ productName }.jpg`} alt={ description } />
+                    <img src={`/assets/${ genre }/${ productName }.jpg`} alt={ description } />
                 </div>
             </div>
             <div className="quick-view-info">
