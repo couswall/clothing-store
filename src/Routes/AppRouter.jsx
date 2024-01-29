@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'; 
-import { AboutPage, ContactPage, ErrorPage, Homepage, MainApp, ProductView } from '../Pages';
+import { AboutPage, ContactPage, ErrorPage, Homepage, MainApp, MenPage, ProductView, WomenPage } from '../Pages';
 
 const routesConfig = createBrowserRouter([
     {
@@ -22,6 +22,14 @@ const routesConfig = createBrowserRouter([
             {
                 path: "product/:productNumber",
                 element: <ProductView/>
+            },
+            {
+                path: "women",
+                element: <WomenPage/>
+            },
+            {
+                path: "men",
+                element: <MenPage/>
             }
         ]
     }

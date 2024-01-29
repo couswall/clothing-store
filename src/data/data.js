@@ -8,7 +8,7 @@ const genres =  {
     women: 'women'
 }
 
-const categories = {
+export const categories = {
 
     men: {
         tShirts: 'T-Shirts',
