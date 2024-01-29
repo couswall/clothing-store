@@ -4,3 +4,5 @@ export * from './Contact/ContactPage';
 export * from './ErrorPage/ErrorPage';
 export * from './MainApp';
 export * from './ProductView/ProductView';
+export * from './WomenPage/WomenPage';
+export * from './MenPage/MenPage';
