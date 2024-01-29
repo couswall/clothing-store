@@ -67,6 +67,8 @@
 
 
 /*  Faq styles  */
+
+
 .faq-header{
     margin-bottom: 20px;
     border-bottom: 1px solid #e1e1e1;
@@ -86,6 +88,30 @@
 }
 
 
+/* Faq content styles */
+
+.faq-product-section p, 
+.faq-product-section li{
+    font-size: 14px;
+    color: var(--text-light-color);
+}
+
+.faq-product-section li {
+    list-style: disc;
+    margin-left: 30px;
+    line-height: 1.1rem;
+}
+
+.faq-product-section h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.faq-product-section h4{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
 
 
 
@@ -151,6 +177,27 @@
     }
     
     .product-information-wrapper .product-description{
+        font-size: 13px;
+    }
+
+
+    /* Faq content styles */
+
+    .faq-product-section p, 
+    .faq-product-section li{
+        font-size: 12px;
+    }
+
+    .faq-product-section li {
+        list-style: disc;
+        margin-left: 30px;
+        line-height: 1.1rem;
+    }
+
+    .faq-product-section h3 {
+        font-size: 14px;
+    }
+    .faq-product-section h4{
         font-size: 13px;
     }
 
