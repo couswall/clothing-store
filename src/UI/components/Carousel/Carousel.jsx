@@ -10,6 +10,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Carousel.css'
+import { Item } from "../Item/Item";
 
 export const Carousel = ({ title, listItems }) => {
 
@@ -65,19 +66,7 @@ export const Carousel = ({ title, listItems }) => {
                                     onClick={ () => onShowQuickView( item ) }>
                                         <FaSearchPlus className="quick-view-icon"/>
                                 </button>
-                                <Link to={`/product/${ item.productNumber }`}>
-                                    <article className='item-container flex'>
-                                        <div className="img-container">
-                                            <img src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={ item.description } />
-                                            <div className="overlay-product"></div>
-                                        </div>
-
-                                        <div className="item-information">
-                                            <h4 className='item-name'>{ item.description }</h4>
-                                            <p className='price text-center'>${ (item.price).toFixed(2) } USD</p>
-                                        </div>
-                                    </article>
-                                </Link>
+                                <Item item = { item }/>
                             </SwiperSlide>
                         ))
                     }

@@ -322,7 +322,7 @@ export const items = [
     {
         id: new Date().getTime() * 27,
         productName: 't-shirt-no-one-cares-women',
-        productNumber: '4040404421',
+        productNumber: '40404929121211',
         description: 'No one cares T-shirt',
         genre: genres.women,
         price: 12.00,
@@ -340,6 +340,17 @@ export const items = [
         size: sizes.uniqueSize,
         latestArrival: true,
         category: categories.women.accesories,
+    },
+    {
+        id: new Date().getTime() * 29,
+        productName: 'coat-women',
+        productNumber: '000912123313',
+        description: 'Coat',
+        genre: genres.women,
+        price: 60.00,
+        size: sizes.generalSizes,
+        latestArrival: true,
+        category: categories.women.coatsAndJackets,
     },
 
     
