@@ -6,4 +6,4 @@ export * from './Carousel/Carousel';
 export * from './AddToCartForm/AddToCartForm';
 export * from './CategoryProduct/CategoryProduct';
 export * from './Item/Item';
-// export * from './Footer';
+export * from './Footer/Footer';

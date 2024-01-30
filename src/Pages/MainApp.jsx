@@ -1,4 +1,4 @@
-import { Navbar } from '../UI/components';
+import { Footer, Navbar } from '../UI/components';
 import { Outlet } from "react-router-dom";
 
 export const MainApp = () => {
@@ -6,6 +6,7 @@ export const MainApp = () => {
     <>
         <Navbar/>
         <Outlet/>
+        <Footer/>
     </>
   )
 }
