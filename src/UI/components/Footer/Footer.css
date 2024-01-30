@@ -34,6 +34,20 @@ footer .container {
 .footer-wrapper ul li a {
     font-size: 14px;
     color: #fff;
+    display: inline-block;
+    padding-bottom:3px;
+    background-image: linear-gradient(#fff 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.footer-wrapper ul li a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
 }
 
 
