@@ -1,6 +1,8 @@
 
 footer {
     background-color: var(--primary-color);
+    /* margin-top: auto; */
+    flex-grow: 1;
 }
 
 

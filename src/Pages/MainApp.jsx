@@ -4,9 +4,13 @@ import { Outlet } from "react-router-dom";
 export const MainApp = () => {
   return (
     <>
-        <Navbar/>
-        <Outlet/>
-        <Footer/>
+        <div className="page-container">
+            <Navbar/>
+              <main>
+                <Outlet/>
+              </main>
+            <Footer/>
+        </div>
     </>
   )
 }

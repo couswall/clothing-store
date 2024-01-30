@@ -12,12 +12,15 @@
     --light-secondary: #FF6969;
     --text-light-color: #717177;
     --secondary-light-color: #919197;
+    
 }
 
 body{
     font-family: var(--font);
     background-color: var(--background-color);
 }
+
+
 
 h1, h2 {
     font-weight: 500;
@@ -118,6 +121,11 @@ img{
     overflow: hidden;
 }
 
+.page-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* ============= BREAKPOINTS ============== */
