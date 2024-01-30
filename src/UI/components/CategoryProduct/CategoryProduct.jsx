@@ -3,11 +3,11 @@ import { getCategories } from '../../../helpers/getCategories';
 import './CategoryProduct.css'
 import { Item } from '../Item/Item';
 
-export const CategoryProduct = ({itemsList}) => {
+export const CategoryProduct = ({itemsList, genre }) => {
 
     const [ currentCategory, setCurrentCategory ] = useState('All');
     const [items, setItems] = useState( itemsList );
-    const arrayOfCategories = getCategories( 'women' );
+    const arrayOfCategories = getCategories( genre );
     const [animateHeroContent, setAnimateHeroContent] = useState(false);
 
 

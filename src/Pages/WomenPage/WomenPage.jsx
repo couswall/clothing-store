@@ -26,7 +26,8 @@ export const WomenPage = () => {
         </article>
         <div className="overlay-hero"></div>
         </section>
-        <CategoryProduct itemsList = { itemsList }/>
+        
+        <CategoryProduct itemsList = { itemsList } genre = 'women' />
         
         <Features/>
 
