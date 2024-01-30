@@ -74,3 +74,90 @@ footer .container {
 .form-container form .btn.flex:hover {
     transform: scale(1.03);
 }
+
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /*  Footer grid wrapper styles */
+    .footer-wrapper.grid{
+        grid-template-columns: 15% 15% 15% 1fr;
+    }
+
+    /* Links and texts  */
+    .footer-wrapper h4{
+        font-size: 14px;
+    }
+
+    .footer-wrapper ul li {
+        margin-bottom: 15px;
+    }
+
+    .footer-wrapper ul li a {
+        font-size: 13px;
+    }
+
+    /*  Form styles  */
+    .form-container p {
+        font-size: 13px;
+    }
+    .form-container form.grid {
+        height: 40px;
+    }
+    
+    .form-container form input{
+        font-size: 13px;
+    }
+    
+    .form-container form .btn.flex {
+        font-size: 13px;
+    }
+
+
+ }
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .footer-wrapper.grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Links and texts  */
+    .footer-wrapper h4{
+        font-size: 16px;
+    }
+
+    .footer-wrapper ul li {
+        margin-bottom: 15px;
+    }
+
+    .footer-wrapper ul li a {
+        font-size: 14px;
+    }
+
+    /*  Form styles  */
+    .form-container p {
+        font-size: 14px;
+    }
+    .form-container form.grid {
+        height: 50px;
+    }
+    
+    .form-container form input{
+        font-size: 15px;
+    }
+    
+    .form-container form .btn.flex {
+        font-size: 15px;
+    }
+ }
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
