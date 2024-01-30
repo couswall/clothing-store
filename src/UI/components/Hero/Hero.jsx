@@ -9,7 +9,7 @@ export const Hero = () => {
             style={{
                 backgroundImage: `url(${heroImage})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundPosition: '100% 25%',
                 backgroundRepeat: 'no-repeat',
             }}
         >

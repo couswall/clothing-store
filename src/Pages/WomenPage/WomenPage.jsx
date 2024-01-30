@@ -3,15 +3,15 @@ import { CategoryProduct } from "../../UI/components/CategoryProduct/CategoryPro
 import { getItemsByGenre } from "../../helpers/getItemsByGenre"
 import heroImage from '/assets/hero-women.jpg';
 import { Features } from '../../UI/components/Features/Features';
-
+import "./WomenPage.css";
 
 export const WomenPage = () => {
 
   const itemsList = getItemsByGenre('women');
-
+  
   return (
     <>
-    <section className='hero-women hero-section'
+    <section className='hero-women'
             style={{
                 backgroundImage: `url(${heroImage})`,
                 backgroundSize: 'cover',
