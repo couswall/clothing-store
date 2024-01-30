@@ -1,5 +1,74 @@
 
 footer {
     background-color: var(--primary-color);
-    height: 100px;
+}
+
+
+/*  Footer Conatiner */
+footer .container {
+    height: 100%;
+}
+
+/*  Footer grid wrapper styles */
+.footer-wrapper.grid{
+    padding: 100px 0px;
+    gap: 0px;
+    grid-template-columns: 20% 20% 20% 40%;
+    align-items: start;
+}
+
+/* Links and texts  */
+.footer-wrapper h4{
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-wrapper ul li {
+    margin-bottom: 15px;
+}
+
+.footer-wrapper ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/*  Form styles  */
+.form-container p {
+    color: #ffffffe3;
+    font-size: 14px;
+}
+
+.form-container form.grid {
+    grid-template-columns: 70% 30%;
+    gap: 0px;
+    margin-top: 30px;
+    height: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.form-container form input{
+    height: 100%;
+    font-size: 15px;
+    font-family: var(--font);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 5px;
+}
+
+.form-container form .btn.flex {
+    font-size: 15px;
+    gap: 10px;
+    border-radius: none;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container form .btn.flex:hover {
+    transform: scale(1.03);
 }
