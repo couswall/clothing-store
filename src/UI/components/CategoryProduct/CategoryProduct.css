@@ -1,0 +1,172 @@
+.categories-product-section{
+    margin-top: 60px;
+}
+
+/* ====== Container wrapped grid ========= */
+.categories-filter-wrapper.grid{
+    grid-template-columns: 20% 80%;
+    grid-gap: 0px;
+}
+
+
+
+/* ====== Buttons Filter Categories ========= */
+.categories-filter{
+    align-self: flex-start;
+}
+
+.category-btn.btn{
+    border-radius: 0px;
+    background-color: transparent;
+    padding: 0px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-bottom:3px;
+    background-image: linear-gradient(var(--primary-color) 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; 
+    text-align: start;
+}
+
+.category-btn.btn:hover{
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+.category-btn.btn.active{
+    font-weight: bold;
+}
+
+
+
+/* ====== Items wrapped grid ========= */
+.items-container-categories.grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+/*  ============= Item styles ========= */
+/* Item image */
+.items-container-categories .img-container{
+    width: 100%;
+    height: 300px;
+}
+
+.items-container-categories .img-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  Select filter category */
+
+.filter-category-select,
+.filter-category-select option{
+    font-size: 15px;
+    font-family: var(--font);
+
+}
+
+.filter-category-select{
+    display: none;
+    border: 1px solid #cccccc;
+    background-color: var(--background-color);
+    outline: none;
+    padding: 8px 12px;
+    margin-bottom: 15px;
+}
+
+
+.items-container-categories .item-information .price{
+    margin: 5px 0px;
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .items-container-categories .item-information .item-name{
+        font-size: 16px;
+    }
+    .items-container-categories .item-information .price{
+        font-size: 15px;
+    }
+
+    /* ====== Buttons Filter Categories ========= */
+    .category-btn.btn{
+        font-size: 13px;
+      
+    }
+}
+
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+    .filter-category-select{
+        display: block;
+    }
+    /* ====== Container wrapped grid ========= */
+    .categories-filter-wrapper.grid{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+
+    /* Category filter */
+    .categories-filter{
+        display: none;
+    }
+    
+
+    /* ====== Items wrapped grid ========= */
+    .items-container-categories.grid{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    
+    /* Item image */
+    .items-container-categories .img-container{
+        height: 250px;
+    }
+
+
+    .items-container-categories .item-information .item-name{
+        font-size: 15px;
+    }
+    .items-container-categories .item-information .price{
+        font-size: 14px;
+    }
+
+
+    
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+    /* ====== Items wrapped grid ========= */
+    .items-container-categories.grid{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    /* Item image */
+    .items-container-categories .img-container{
+        height: 300px;
+    }
+
+
+    .items-container-categories .item-information .item-name{
+        font-size: 16px;
+    }
+    .items-container-categories .item-information .price{
+        font-size: 15px;
+    }
+ }
