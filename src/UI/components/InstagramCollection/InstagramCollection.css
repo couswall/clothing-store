@@ -2,6 +2,8 @@
     padding: 0px;
 }
 
+
+/* -- Grid wrapper -- */
 .instagram-section .grid{
     position: relative;
     grid-template-columns: repeat(6, 1fr);
@@ -12,6 +14,7 @@
 }
 
 
+/*  --- Image container and image styles --- */
 .instagram-section .img-container{
     width: 100%;
     height:350px;
@@ -22,6 +25,7 @@
     height: 100%;
 }
 
+/*  --- Button and instagram icon styles  --- */
 .instagram-section .btn.flex{
     position: absolute;
     top: 50%;
@@ -37,3 +41,42 @@
 .instagram-section .btn .ig-icon{
     font-size: 25px;
 }
+
+
+
+/* ======= Breakpoints  ===============  */
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    /*  --- Image container and image styles --- */
+    .instagram-section .img-container{
+        height:200px;
+    }
+ }
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /* -- Grid wrapper -- */
+    .instagram-section .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*  --- Image container and image styles --- */
+    .instagram-section .img-container{
+        height:300px;
+    }
+
+ }
+
+
+ /* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /*  --- Image container and image styles --- */
+    .instagram-section .img-container{
+        height:220px;
+    }
+ }
