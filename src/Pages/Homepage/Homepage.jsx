@@ -1,4 +1,4 @@
-import { Hero,Features, Carousel } from "../../UI/components"
+import { Hero,Features, Carousel, FeaturedOn } from "../../UI/components"
 import { items } from "../../data/data"
 import { shuffleArray } from "../../helpers/shuffleArray";
 import { Categories } from "./components/"
@@ -16,6 +16,8 @@ export const Homepage = () => {
       <Categories/>
       
       <Carousel title= 'Latest Arrivals' listItems={ latestItems }/>
+
+      <FeaturedOn/>
     </>
   
   )

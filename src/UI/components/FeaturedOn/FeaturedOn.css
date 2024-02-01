@@ -1,0 +1,77 @@
+
+/*  Título de Featured ON */
+.featured-on-section .heading-line{
+    font-weight: 400;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+}
+
+.featured-on-section .heading-line::before,
+.featured-on-section .heading-line::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color:#e1e1e1;
+}
+
+
+ /*  Estilos de logos */
+ .featured-on-section .logos-wrapper.grid{
+    
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0px;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    margin-top: -14px;
+ }
+
+ .featured-on-section .logos-wrapper.grid .logo-content{
+    height: 150px;
+ }
+
+ .featured-on-section .logos-wrapper.grid .logo-content p{
+    text-transform: uppercase;
+    color: #0000007c;
+    letter-spacing: 2px;
+ }
+
+
+
+ /* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+     /*  Estilos de logos */
+    .featured-on-section .logos-wrapper.grid{
+        grid-template-columns: repeat(3, 1fr);
+     }
+
+     .featured-on-section .logos-wrapper.grid .logo-content{
+        height: 110px;
+        border: 1px solid #e1e1e1;
+        border-top: none;
+     }
+
+ }
+
+
+ /* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /*  Título de Featured ON */
+    .featured-on-section .heading-line{
+        font-size: 18px;
+    }
+
+    /*  Estilos de logos */
+    .featured-on-section .logos-wrapper.grid{
+        grid-template-columns: 1fr;
+     }
+
+     .featured-on-section .logos-wrapper.grid .logo-content{
+        height: 130px;
+     }
+
+ }
