@@ -34,7 +34,7 @@ export const ContactPage = () => {
           style={{
             backgroundImage: `url(${heroContactImage})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center bottom',
+            backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
       }}  
         >
