@@ -16,6 +16,10 @@ export const ProductView = () => {
 
   const recommendations = useMemo( () => getRecommendations( item.id, item.genre ), [ productNumber ]);
 
+  useEffect(() => {
+    setFaqOption( false )
+  }, [productNumber])
+  
 
   return (
     <>

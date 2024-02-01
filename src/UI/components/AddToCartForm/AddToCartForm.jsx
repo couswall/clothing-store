@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useForm } from "../../../hooks/useForm";
 import { CartContext } from "../../../context";
 
@@ -31,6 +31,10 @@ export const AddToCartForm = ({ item }) => {
         setShowCart( true );
 
     }
+
+    useEffect( () => {
+        onResetForm();
+    }, [ item ])
 
     
   return (
