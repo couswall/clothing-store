@@ -8,3 +8,4 @@ export * from './CategoryProduct/CategoryProduct';
 export * from './Item/Item';
 export * from './FeaturedOn/FeaturedOn';
 export * from './Footer/Footer';
+export * from './InstagramCollection/InstagramCollection';

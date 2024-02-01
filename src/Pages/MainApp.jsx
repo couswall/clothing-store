@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '../UI/components';
+import { Footer, InstagramCollection, Navbar } from '../UI/components';
 import { Outlet } from "react-router-dom";
 
 export const MainApp = () => {
@@ -8,6 +8,7 @@ export const MainApp = () => {
             <Navbar/>
               <main>
                 <Outlet/>
+                <InstagramCollection/>
               </main>
             <Footer/>
         </div>
