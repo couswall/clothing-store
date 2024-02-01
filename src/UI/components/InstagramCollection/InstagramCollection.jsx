@@ -1,12 +1,28 @@
-
+import { useState } from 'react';
+import { FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import './InstagramCollection.css';
 
 export const InstagramCollection = () => {
+
+    const [cells, setCells] = useState(Array(6).fill(null));
+
   return (
     <>
         <section className="instagram-section">
-            <div className="container grid">
-                
+            <div className="grid">
+                {
+                    cells.map( (cell, index) => (
+                        <article className='img-container' key={ index }>
+                            <img src= {`/assets/instagram-collection/instagram-collection-${ index + 1 }.jpg`} alt="" />
+                        </article>
+                    ))
+                }
+            
+            <Link className='btn btn-secondary flex' to={'/'}>
+                <FaInstagram className='ig-icon' />
+                Follow Dollek
+            </Link>
             </div>
         </section>
     </>
