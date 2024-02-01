@@ -46,3 +46,10 @@
 .contact-us-form .btn {
     font-size: 16px;
 }
+
+.contact-us-form .btn.btn-secondary.submiting {
+    background-color: var(--text-light-color);
+}
+
+
+

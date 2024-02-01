@@ -2,8 +2,11 @@ import heroContactImage from "/assets/contact-hero.jpg";
 import './ContactPage.css';
 import { Features } from "../../UI/components/Features/Features";
 import { useForm } from "../../hooks/useForm";
+import { useState } from "react";
 
 export const ContactPage = () => {
+
+  const [submitingForm, setSubmitingForm] = useState( true )
 
   const { name, email, text, onInputChange, onResetForm } = useForm({
     name: '',
@@ -64,7 +67,7 @@ export const ContactPage = () => {
             <textarea placeholder="Your text"/>
 
             <button 
-              className="btn btn-secondary" 
+              className={`btn btn-secondary ${ submitingForm ? 'submiting' : '' }` }
               type="submit"
               name="text"
               value={text}
