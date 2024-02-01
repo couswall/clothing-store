@@ -1,0 +1,65 @@
+.about-section{
+    margin-top: 80px;
+}
+
+.about-section .container.grid{
+    gap: 50px;
+    grid-template-columns: 53% 1fr;
+    grid-auto-rows: 600px;
+    overflow: hidden;
+}
+
+
+/* ==== Image and about content styles ====  */
+.about-section .image-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about-section .image-wrapper img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.about-section .about-years-content{
+    width: 70%;
+    padding: 76px 0px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 6;
+    position: absolute;
+    text-align: center;
+    background-color: #fff5e0;
+}
+
+.about-years-content .number-text{
+    font-size: 160px;
+}
+
+.about-years-content .years-text{
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--text-light-color);
+
+}
+
+
+
+/*  About content styles */
+.about-info-container h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.about-info-container p {
+    color: var(--text-light-color);
+    margin-bottom: 40px;
+}
+
+.about-info-container .btn-secondary{
+    font-size: 14px;
+}

@@ -100,6 +100,15 @@ img{
     background-color: #253780;
 }
 
+.btn-secondary{
+    background-color: var(--light-secondary);
+    color: #fff;
+}
+
+.btn-secondary:hover{
+   background-color: #d15a5a ;
+}
+
 /* --FONTS-- */
 .sm{
     font-size: 1rem;
