@@ -6,3 +6,4 @@ export * from './MainApp';
 export * from './ProductView/ProductView';
 export * from './WomenPage/WomenPage';
 export * from './MenPage/MenPage';
+export * from './StorePage/StorePage';
