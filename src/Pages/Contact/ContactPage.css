@@ -1,6 +1,48 @@
+/*  hero contact styles  */
 .hero-contact{
     height: 50vh;
     position: relative;
     background-attachment: fixed;
     margin-bottom: 100px;
+}
+
+
+/*  Hero content grid  */
+.contact-section .grid{
+    gap: 50px;
+}
+
+
+/* Text styles */
+.contact-text-container h2 {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.contact-text-container p {
+    color: var(--text-light-color);
+    margin-bottom: 40px;
+}
+
+/*  Form styles  */
+.contact-us-form input,
+.contact-us-form textarea{
+    background-color: transparent;
+    font-size: 15px;
+    width: 100%;
+    font-family: var(--font);
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+    padding: 0 18px 16px 0;
+    margin-bottom: 25px;
+}
+
+.contact-us-form textarea{
+    min-height: 150px;
+    resize: none; 
+}
+
+.contact-us-form .btn {
+    font-size: 16px;
 }
