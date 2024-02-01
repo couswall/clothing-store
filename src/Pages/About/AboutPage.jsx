@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { FeaturedOn } from "../../UI/components/";
+import { Link, ScrollRestoration } from "react-router-dom";
 import aboutImage from '/assets/about-section.jpg';
 import './AboutPage.css';
 
@@ -27,6 +28,10 @@ export const AboutPage = () => {
               </div>
             </div>
         </section>
+
+        <FeaturedOn/>
+
+        <ScrollRestoration/>
     </>
   )
 }
