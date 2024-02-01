@@ -1,10 +1,25 @@
 import { Link } from 'react-router-dom'
 import { FaArrowRight} from "react-icons/fa6";
 import './Footer.css'
+import { useForm } from '../../../hooks/useForm';
 
 
 
 export const Footer = () => {
+
+  const { email, onInputChange, onResetForm } = useForm({
+    email: ''
+  });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    onResetForm();
+  }
+
+
+
+
   return (
     <>
         <footer>
@@ -41,13 +56,16 @@ export const Footer = () => {
                     <h4>The good stuff in your box</h4>
                     <p>News & updates from Olea. No spam, we promise.</p>
                     
-                    <form className='grid'>
+                    <form className='grid' onSubmit={ onSubmit }>
                       <input 
                         type="email" 
                         placeholder='Enter your email'
+                        name='email'
+                        onChange={ onInputChange }
+                        value={ email }
                         required
                       />
-                      <button className='btn flex'>
+                      <button className='btn flex' type='submit'>
                         Sign Up
                         <FaArrowRight />
                       </button>
