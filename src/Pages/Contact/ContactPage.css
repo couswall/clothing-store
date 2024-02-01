@@ -52,4 +52,13 @@
 }
 
 
+/* Submission message styles */
+
+.submission-message{
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    align-self: flex-start;
+}
+
 
