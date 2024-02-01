@@ -1,7 +1,8 @@
 import { Hero,Features, Carousel, FeaturedOn } from "../../UI/components"
 import { items } from "../../data/data"
 import { shuffleArray } from "../../helpers/shuffleArray";
-import { Categories } from "./components/"
+import { CallToAction, Categories } from "./components/"
+
 
 export const Homepage = () => {
   
@@ -18,6 +19,9 @@ export const Homepage = () => {
       <Carousel title= 'Latest Arrivals' listItems={ latestItems }/>
 
       <FeaturedOn/>
+
+      <CallToAction/>
+      
     </>
   
   )
