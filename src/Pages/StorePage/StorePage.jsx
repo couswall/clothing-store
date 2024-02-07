@@ -99,10 +99,11 @@ export const StorePage = () => {
                                 ))
                             }
                     </div>
-                    
-                    <div>
+                </div>
+
+                    <div className='pagintation-btns-wrapper flex'>
                       <button 
-                        className='btn btn-secondary' 
+                        className={`btn btn-secondary ${ (currentPage === 1 ) ? 'disabled' : ''}`} 
                         onClick={() => onHandlePreviousPage() }
                         disabled = { currentPage === 1 }
                         >
@@ -110,14 +111,13 @@ export const StorePage = () => {
                       </button>
                       
                       <button 
-                        className='btn btn-secondary' 
+                        className={`btn btn-secondary ${ (currentPage === totalPages) ? 'disabled' : ''}`} 
                         onClick={( ) => onHandleNextPage() }
                         disabled = { currentPage === totalPages }
                         >
                           Next
                       </button>
                     </div>
-                </div>
             </div>
         </section>
     </>

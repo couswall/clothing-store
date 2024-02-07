@@ -1,0 +1,14 @@
+
+
+.pagintation-btns-wrapper.flex{
+    width: 100%;
+    justify-content: end;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.pagintation-btns-wrapper button.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
