@@ -1,0 +1,29 @@
+.search-page{
+    margin-top: 100px;
+}
+
+.search-page .search-input-wrapper{
+    position: static;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+.search-page .search-input-wrapper form.grid input,
+.search-page .search-input-wrapper form.grid button{
+    font-size: 30px;
+    border-radius: 0;
+    height: 80px;
+    color: var(--primary-color);
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid  var(--primary-color);
+}
+
+.search-page .search-input-container{
+    margin-bottom: 30px;
+}
+
+.search-page .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 250px));
+}

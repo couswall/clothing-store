@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'; 
-import { AboutPage, ContactPage, ErrorPage, Homepage, MainApp, MenPage, ProductView, StorePage, WomenPage } from '../Pages';
+import { AboutPage, ContactPage, ErrorPage, Homepage, MainApp, MenPage, ProductView, SearchPage, StorePage, WomenPage } from '../Pages';
 
 const routesConfig = createBrowserRouter([
     {
@@ -34,6 +34,10 @@ const routesConfig = createBrowserRouter([
             {
                 path: "men",
                 element: <MenPage/>
+            },
+            {
+                path: "search",
+                element: <SearchPage/>
             }
         ]
     }
