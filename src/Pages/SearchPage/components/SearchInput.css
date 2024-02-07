@@ -1,0 +1,38 @@
+.search-input-wrapper{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 20;
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.search-input-wrapper form.grid {
+    gap: 0px;
+    grid-template-columns: 90% 10%;
+    width: 100%;
+    
+}
+
+.search-input-wrapper form.grid input,
+.search-input-wrapper form.grid button{
+    
+    font-size: 30px;
+    border-radius: 0;
+    height: 80px;
+    color: #fff;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.search-input-wrapper form.grid input {
+    outline: none;
+}
+
+.search-input-wrapper form.grid button{
+
+    padding: 0px;
+
+}
