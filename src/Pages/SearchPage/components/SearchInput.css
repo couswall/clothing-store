@@ -17,7 +17,6 @@
 
 .search-input-wrapper form.grid input,
 .search-input-wrapper form.grid button{
-    
     font-size: 30px;
     border-radius: 0;
     height: 80px;
@@ -32,7 +31,35 @@
 }
 
 .search-input-wrapper form.grid button{
-
     padding: 0px;
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+    .search-input-wrapper form.grid input,
+    .search-input-wrapper form.grid button{
+        font-size: 25px;
+    }
+
+    .search-input-wrapper{
+        height: 120px;
+        padding-bottom: 20px;
+    }
 
 }
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .search-input-wrapper form.grid input,
+    .search-input-wrapper form.grid button{
+        font-size: 20px;
+    }
+
+    .search-input-wrapper{
+        height: 100px;
+    }
+ }
+
