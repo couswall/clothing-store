@@ -10,8 +10,8 @@ export const ContactPage = () => {
   const [hasBeenSubmited, setHasBeenSubmited] = useState( false );
 
   const { name, email, text, onInputChange, onResetForm } = useForm({
-    name: 'andre',
-    email: 'andre@google.com',
+    name: '',
+    email: '',
     text: ''
   })
 
