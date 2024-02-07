@@ -27,3 +27,14 @@
 .search-page .grid {
     grid-template-columns: repeat(auto-fill, minmax(100px, 250px));
 }
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+    .search-page .grid {
+        grid-template-columns: repeat(2, minmax(80px, 200px));
+        
+    }
+
+}
