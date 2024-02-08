@@ -7,12 +7,16 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
+import './Carousel.css'
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './Carousel.css'
 import { Item } from "../Item/Item";
 
-export const Carousel = ({ title, listItems }) => {
+export const Carousel = ({ title, listItems, id }) => {
+
+    const paginationClass = `swiper-pagination-${id}`;
+    const nextButtonClass = `swiper-pagination-next-${id}`;
+    const prevButtonClass = `swiper-pagination-prev-${id}`;
 
     const [showQuickView, setShowQuickView] = useState(false);
     const [ currentItem, setCurrentItem ] = useState({});
@@ -34,11 +38,11 @@ export const Carousel = ({ title, listItems }) => {
                     spaceBetween={30}
                     pagination={{
                         clickable: true,
-                        el: '.swiper-pagination'
+                        el: `.${paginationClass}`
                     }}
                     navigation = {{
-                        nextEl: '.swiper-pagination-next',
-                        prevEl: '.swiper-pagination-prev'
+                        nextEl: `.${nextButtonClass}`,
+                        prevEl: `.${prevButtonClass}`
                     }}
                     breakpoints={{
                     
@@ -71,12 +75,12 @@ export const Carousel = ({ title, listItems }) => {
                         ))
                     }
                 </Swiper>
-                <div className="swiper-pagination"></div>
+                <div className={`swiper-pagination ${paginationClass}`}></div>
                 
-                <button className="swiper-pagination-prev btn">
+                <button className={`swiper-pagination-prev btn ${prevButtonClass}`}>
                     <FaArrowLeft/>
                 </button>
-                <button className="swiper-pagination-next btn">
+                <button className={`swiper-pagination-next btn ${nextButtonClass}`}>
                     <FaArrowRight />
                 </button>
 
