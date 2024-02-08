@@ -4,6 +4,7 @@ import { items } from '../../data/data';
 import { Item } from '../../UI/components/Item/Item';
 import heroImage from "/assets/store-hero-image.jpg";
 import './StorePage.css';
+import { Features } from '../../UI/components/Features/Features';
 
 export const StorePage = () => {
 
@@ -136,7 +137,8 @@ export const StorePage = () => {
                     </div>
             </div>
         </section>
-
+        
+        <Features/>
 
         <ScrollRestoration/>
     </>
