@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './CategoryProduct.css'
 import { Item } from '../Item/Item';
 
-export const CategoryProduct = ({ itemsList = [] , genre = '', arrayOfCategories = [], filterItems }) => {
+export const CategoryProduct = ({ itemsList = [], arrayOfCategories = [], filterItems }) => {
 
     const [ currentCategory, setCurrentCategory ] = useState('All');
     const [items, setItems] = useState( itemsList );

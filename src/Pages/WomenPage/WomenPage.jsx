@@ -38,7 +38,6 @@ export const WomenPage = () => {
         
         <CategoryProduct 
           itemsList = { itemsList } 
-          genre = 'women' 
           arrayOfCategories={ arrayOfCategories }
           filterItems={ filterItems }
         />
