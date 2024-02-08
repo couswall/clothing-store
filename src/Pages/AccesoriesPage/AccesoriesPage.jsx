@@ -1,4 +1,4 @@
-
+import { ScrollRestoration} from 'react-router-dom';
 import { CategoryProduct } from '../../UI/components/CategoryProduct/CategoryProduct'
 import { items } from '../../data/data'
 import './AccesoriesPage.css'
@@ -24,6 +24,8 @@ export const AccesoriesPage = () => {
             arrayOfCategories={ arrayOfCategories }
             filterItems={ filterItems }
         />
+
+        <ScrollRestoration/>
     </>
     )
 }
