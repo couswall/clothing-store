@@ -1,6 +1,7 @@
 import { ScrollRestoration} from 'react-router-dom';
 import { CategoryProduct } from '../../UI/components/CategoryProduct/CategoryProduct'
 import { items } from '../../data/data'
+import heroImage from '/assets/accesories-hero-image.jpg';
 import './AccesoriesPage.css'
 
 export const AccesoriesPage = () => {
@@ -18,6 +19,21 @@ export const AccesoriesPage = () => {
 
   return (
     <>
+        <section 
+                className="hero-store section"
+                style={{
+                    backgroundImage: `url(${heroImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+            }}  
+                >
+                <article className='hero-content container flex'>
+                    <h1 className='text-center'>Accesories</h1>
+                    <div className="underline-title"></div>
+                </article>
+                <div className="overlay-hero"></div>
+            </section>
 
         <CategoryProduct 
             itemsList={ itemList }
