@@ -1,4 +1,9 @@
-
+.hero-store{
+    height: 70vh;
+    position: relative;
+    /* background-attachment: fixed; */
+    margin-bottom: 100px;
+}
 
 .pagintation-btns-wrapper.flex{
     width: 100%;

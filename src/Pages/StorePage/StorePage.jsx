@@ -1,14 +1,15 @@
 import { useMemo, useState } from 'react';
-import './StorePage.css';
+import { ScrollRestoration } from "react-router-dom";
 import { items } from '../../data/data';
 import { Item } from '../../UI/components/Item/Item';
+import './StorePage.css';
 
 export const StorePage = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [ currentCategory, setCurrentCategory ] = useState('All');
   const [itemsList, setItemsList] = useState( items );
-  const [arrayOfCategories, setArrayOfCategories] = useState(["All", "women", "men"]);
+  const [arrayOfCategories, setArrayOfCategories] = useState(["All", "Women", "Men"]);
   const [animateHeroContent, setAnimateHeroContent] = useState(false);
 
   const indexOfLastItem = currentPage * 6;
@@ -54,10 +55,24 @@ export const StorePage = () => {
 
   return (
     <>
+        {/* <section 
+            className="hero-store section"
+            style={{
+                backgroundImage: `url(${heroContactImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+        }}  
+            >
+            <article className='hero-content container flex'>
+                <h1 className='text-center'>Contact us</h1>
+                <div className="underline-title"></div>
+            </article>
+            <div className="overlay-hero"></div>
+        </section> */}
+        
         <section className="categories-product-section section">
             <div className="container">
-
-                
 
                 <div className="categories-filter-wrapper grid">
                     
@@ -120,6 +135,9 @@ export const StorePage = () => {
                     </div>
             </div>
         </section>
+
+
+        <ScrollRestoration/>
     </>
   )
 }
