@@ -3,6 +3,7 @@ import { CategoryProduct } from '../../UI/components/CategoryProduct/CategoryPro
 import { items } from '../../data/data'
 import heroImage from '/assets/accesories-hero-image.jpg';
 import './AccesoriesPage.css'
+import { Features } from '../../UI/components/Features/Features';
 
 export const AccesoriesPage = () => {
 
@@ -41,6 +42,7 @@ export const AccesoriesPage = () => {
             filterItems={ filterItems }
         />
 
+        <Features/>
         <ScrollRestoration/>
     </>
     )
