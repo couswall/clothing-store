@@ -55,7 +55,7 @@ export const Categories = () => {
                     </Link>
 
                     <Link  
-                        to = {'/'} 
+                        to = {'/new-collection'} 
                         className="category-container"
                     >       
                         <div    
