@@ -29,7 +29,7 @@ export const Footer = () => {
                   <div className="shop-footer">
                     <h4>Shop</h4>
                     <ul>
-                      <li><Link to={'/'}>New Collection</Link></li>
+                      <li><Link to={'/new-collection'}>New Collection</Link></li>
                       <li><Link to={'/women'}>Women</Link></li>
                       <li><Link to={'/men'}>Men</Link></li>
                     </ul>
