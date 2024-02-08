@@ -16,7 +16,7 @@ export const Homepage = () => {
       <Features/>
       <Categories/>
       
-      <Carousel title= 'Latest Arrivals' listItems={ latestItems }/>
+      <Carousel title= 'Latest Arrivals' listItems={ latestItems } id='last-arrivals'/>
 
       <FeaturedOn/>
 

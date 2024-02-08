@@ -87,7 +87,7 @@ export const ProductView = () => {
             </div>
           </section>
 
-          <Carousel title={'Others Also Bought'} listItems={ recommendations }/>
+          <Carousel title={'Others Also Bought'} listItems={ recommendations } id='recommendations'/>
           <Features/>
 
 
