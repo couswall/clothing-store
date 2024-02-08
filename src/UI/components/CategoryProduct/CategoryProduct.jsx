@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { getCategories } from '../../../helpers/getCategories';
+// import { getCategories } from '../../../helpers/getCategories';
 import './CategoryProduct.css'
 import { Item } from '../Item/Item';
 
-export const CategoryProduct = ({itemsList, genre }) => {
+export const CategoryProduct = ({ itemsList = [] , genre = '', arrayOfCategories = [], filterItems }) => {
 
     const [ currentCategory, setCurrentCategory ] = useState('All');
     const [items, setItems] = useState( itemsList );
-    const arrayOfCategories = getCategories( genre );
+    // const arrayOfCategories = getCategories( genre );
     const [animateHeroContent, setAnimateHeroContent] = useState(false);
 
 
@@ -18,12 +18,15 @@ export const CategoryProduct = ({itemsList, genre }) => {
         setCurrentCategory( name );
         setAnimateHeroContent(true);
         
-        if ( name === "All" || value === "All" ) {
-            setItems( itemsList );
-        }else{
-            const itemsByCatergory = itemsList.filter( item => item.category === name || item.category === value  );
-            setItems( itemsByCatergory );
-        }
+        // if ( name === "All" || value === "All" ) {
+        //     setItems( itemsList );
+        // }else{
+        //     const itemsByCatergory = itemsList.filter( item => item.category === name || item.category === value  );
+        //     setItems( itemsByCatergory );
+        // }
+        const filteredItems = filterItems( itemsList, name, value )
+
+        setItems( filteredItems );
 
         await new Promise( r => setTimeout(r, 500));
 
