@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { ScrollRestoration } from "react-router-dom";
 import { items } from '../../data/data';
 import { Item } from '../../UI/components/Item/Item';
+import heroImage from "/assets/store-hero-image.jpg";
 import './StorePage.css';
 
 export const StorePage = () => {
@@ -55,21 +56,21 @@ export const StorePage = () => {
 
   return (
     <>
-        {/* <section 
+        <section 
             className="hero-store section"
             style={{
-                backgroundImage: `url(${heroContactImage})`,
+                backgroundImage: `url(${heroImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
         }}  
             >
             <article className='hero-content container flex'>
-                <h1 className='text-center'>Contact us</h1>
+                <h1 className='text-center'>Store</h1>
                 <div className="underline-title"></div>
             </article>
             <div className="overlay-hero"></div>
-        </section> */}
+        </section>
         
         <section className="categories-product-section section">
             <div className="container">
