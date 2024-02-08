@@ -21,7 +21,7 @@ export const AccesoriesPage = () => {
   return (
     <>
         <section 
-                className="hero-store section"
+                className="hero-accesories section"
                 style={{
                     backgroundImage: `url(${heroImage})`,
                     backgroundSize: 'cover',
