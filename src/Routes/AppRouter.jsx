@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'; 
-import { AboutPage, AccesoriesPage, ContactPage, ErrorPage, Homepage, MainApp, MenPage, ProductView, SearchPage, StorePage, WomenPage } from '../Pages';
+import { AboutPage, AccesoriesPage, ContactPage, ErrorPage, Homepage, MainApp, MenPage, NewCollectionPage, ProductView, SearchPage, StorePage, WomenPage } from '../Pages';
 
 const routesConfig = createBrowserRouter([
     {
@@ -42,6 +42,10 @@ const routesConfig = createBrowserRouter([
             {
                 path: 'accesories', 
                 element: <AccesoriesPage/>
+            }, 
+            {
+                path: 'new-collection',
+                element: <NewCollectionPage/>
             }
         ]
     }

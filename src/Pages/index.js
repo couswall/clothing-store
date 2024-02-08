@@ -9,3 +9,4 @@ export * from './MenPage/MenPage';
 export * from './StorePage/StorePage';
 export * from './SearchPage';
 export * from './AccesoriesPage/AccesoriesPage';
+export * from './NewCollectionPage/NewCollectionPage';
