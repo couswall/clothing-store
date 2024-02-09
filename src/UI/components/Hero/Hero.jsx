@@ -1,4 +1,5 @@
 import heroImage from '/assets/clothing-store-hero.jpg';
+import { Link } from "react-router-dom";
 import './Hero.css';
 
 export const Hero = () => {
@@ -17,7 +18,7 @@ export const Hero = () => {
             <h1 className='text-center'>Dollek Collection on Sale Now</h1>
             <div className="underline-title"></div>
             <p className='sm text-center'>Mid-Season SALE only at Olea</p>
-            <a className='sm' href="#">View Collection</a>
+            <Link className='sm' to="/new-collection">View Collection</Link>
         </article>
 
 
