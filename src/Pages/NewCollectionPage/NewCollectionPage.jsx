@@ -14,7 +14,7 @@ export const NewCollectionPage = () => {
     <>
      
      <section 
-            className="hero-store section"
+            className="hero-new-collection section"
             style={{
                 backgroundImage: `url(${heroImage})`,
                 backgroundSize: 'cover',
