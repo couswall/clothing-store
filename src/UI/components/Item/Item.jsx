@@ -6,7 +6,7 @@ export const Item = ({item}) => {
     <Link to={`/product/${ item.productNumber }`}>
         <article className='item-container flex'>
             <div className="img-container">
-                <img src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={ item.description } />
+                <img loading="lazy" src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={ item.description } />
                 <div className="overlay-product"></div>
             </div>
 
