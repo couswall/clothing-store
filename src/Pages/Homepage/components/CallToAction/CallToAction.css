@@ -13,6 +13,14 @@
 }
 
 
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+    .best-day-call2action{
+        background-attachment: scroll;
+    }
+
+}
 
 
 /* // Small devices (landscape phones, less than 768px) */
