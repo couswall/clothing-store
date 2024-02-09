@@ -63,6 +63,7 @@ export const AddToCartForm = ({ item }) => {
                 name="quantity"
                 value={ quantity }
                 onChange={ onInputChange }
+                required
             />
 
             <button 
