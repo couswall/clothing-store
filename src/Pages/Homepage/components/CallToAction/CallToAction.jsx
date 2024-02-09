@@ -1,4 +1,5 @@
 import  callToActionImage  from '/assets/best-day-call2action.jpg';
+import { Link } from "react-router-dom";
 import './CallToAction.css'
 
 
@@ -17,7 +18,7 @@ export const CallToAction = () => {
 
         <article className='hero-content container flex'>
             <h2 className='text-center'>Best of the day</h2>
-            <a className='sm' href="#">View Collection</a>
+            <Link className='sm' to="/new-collection">View Collection</Link>
         </article>
 
         <div className="overlay-hero"></div>
