@@ -14,7 +14,7 @@ export const InstagramCollection = () => {
                 {
                     cells.map( (cell, index) => (
                         <article className='img-container' key={ index }>
-                            <img src= {`/assets/instagram-collection/instagram-collection-${ index + 1 }.jpg`} alt="" />
+                            <img loading="lazy" src= {`/assets/instagram-collection/instagram-collection-${ index + 1 }.jpg`} alt="ig-collection" />
                         </article>
                     ))
                 }

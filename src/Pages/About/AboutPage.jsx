@@ -11,7 +11,7 @@ export const AboutPage = () => {
             <div className="container grid">
 
               <div className="image-wrapper">
-                <img src={ aboutImage } alt="About us" />
+                <img src={ aboutImage } alt="About us" loading="lazy"/>
                 <div className="about-years-content">
                   <h2 className='number-text'>10</h2>
                   <h4 className='years-text'>Years of experience</h4>
