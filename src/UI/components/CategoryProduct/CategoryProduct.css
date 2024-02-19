@@ -13,6 +13,7 @@
 /* ====== Buttons Filter Categories ========= */
 .categories-filter{
     align-self: flex-start;
+    appearance: none;
 }
 
 .category-btn.btn{

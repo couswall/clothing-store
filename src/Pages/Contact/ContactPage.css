@@ -94,8 +94,8 @@
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     /*  hero contact styles  */
-    .hero-contact{
-        background-position: 35% center!important;
+    .hero-contact-img{
+        object-position: 35% center!important;
     }
      
     /* Text styles */

@@ -3,6 +3,7 @@ import heroContactImage from "/assets/contact-hero.jpg";
 import './ContactPage.css';
 import { useForm } from "../../hooks/useForm";
 import { useState } from "react";
+import { LazyBackgroundImg } from '../../UI/components/LazyBackgroundImg/LazyBackgroundImg';
 
 export const ContactPage = () => {
 
@@ -29,23 +30,13 @@ export const ContactPage = () => {
   return (
 
     <>
-        <section 
-          className="hero-contact section"
-          style={{
-            backgroundImage: `url(${heroContactImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-      }}  
-        >
+        <LazyBackgroundImg imgUrl={ heroContactImage } cssClass={'hero-contact'}>
           <article className='hero-content container flex'>
-            <h1 className='text-center'>Contact us</h1>
-            <div className="underline-title"></div>
-          </article>
-        <div className="overlay-hero"></div>
-        </section>
-
-        {/* <Features/> */}
+              <h1 className='text-center'>Contact us</h1>
+              <div className="underline-title"></div>
+            </article>
+          <div className="overlay-hero"></div>
+        </LazyBackgroundImg>
 
         <section className="contact-section section">
           <div className="container grid">
