@@ -4,6 +4,7 @@ import { items } from '../../data/data'
 import heroImage from '/assets/accesories-hero-image.jpg';
 import './AccesoriesPage.css'
 import { Features } from '../../UI/components/Features/Features';
+import { LazyBackgroundImg } from '../../UI/components/LazyBackgroundImg/LazyBackgroundImg';
 
 export const AccesoriesPage = () => {
 
@@ -20,21 +21,14 @@ export const AccesoriesPage = () => {
 
   return (
     <>
-        <section 
-                className="hero-accesories section"
-                style={{
-                    backgroundImage: `url(${heroImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-            }}  
-                >
-                <article className='hero-content container flex'>
-                    <h1 className='text-center'>Accesories</h1>
-                    <div className="underline-title"></div>
-                </article>
-                <div className="overlay-hero"></div>
-            </section>
+        <LazyBackgroundImg imgUrl={heroImage} cssClass='hero-accesories'>
+            <article className='hero-content container flex'>
+                <h1 className='text-center'>Accesories</h1>
+                <div className="underline-title"></div>
+            </article>
+            <div className="overlay-hero"></div>
+        </LazyBackgroundImg>
+
 
         <CategoryProduct 
             itemsList={ itemList }

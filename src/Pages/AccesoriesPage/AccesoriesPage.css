@@ -1,13 +1,13 @@
 .hero-accesories{
     height: 70vh;
     position: relative;
-    background-attachment: fixed;
     margin-bottom: 100px;
+    /* background-attachment: fixed; */
 }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
     .hero-accesories{
         background-attachment: scroll;
     }
- }
+ } */
