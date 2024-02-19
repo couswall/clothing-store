@@ -1,7 +1,7 @@
 .best-day-call2action{
     height: 90vh;
     position: relative;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin-bottom: 100px;
 }
 
@@ -14,13 +14,13 @@
 
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+/* @media (max-width: 991.98px) { 
 
     .best-day-call2action{
         background-attachment: scroll;
     }
 
-}
+} */
 
 
 /* // Small devices (landscape phones, less than 768px) */
