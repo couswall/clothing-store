@@ -1,16 +1,16 @@
 .hero-new-collection{
     height: 70vh;
     position: relative;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     margin-bottom: 100px;
 }
 
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+/* @media (max-width: 991.98px) { 
 
     .hero-new-collection{
         background-attachment: scroll;
     }
 
-}
+} */
