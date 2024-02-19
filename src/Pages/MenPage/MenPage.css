@@ -1,15 +1,6 @@
 .hero-men{
     height: 90vh;
     position: relative;
-    background-attachment: fixed;
     margin-bottom: 100px;
 }
 
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-
-    .hero-men{
-        background-attachment: scroll;
-    }
-
-}

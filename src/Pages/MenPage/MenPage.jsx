@@ -4,6 +4,7 @@ import { getItemsByGenre, getCategories } from '../../helpers';
 import { CategoryProduct } from '../../UI/components/CategoryProduct/CategoryProduct';
 import './MenPage.css';
 import { Features } from '../../UI/components/Features/Features';
+import { LazyBackgroundImg } from '../../UI/components/LazyBackgroundImg/LazyBackgroundImg';
 
 export const MenPage = () => {
 
@@ -19,7 +20,16 @@ export const MenPage = () => {
 
   return (
     <>
-        <section className='hero-men'
+        <LazyBackgroundImg imgUrl={ heroImage } cssClass='hero-men'>
+            <article className='hero-content container flex'>
+              <h1 className='text-center'>Men Collection</h1>
+              <div className="underline-title"></div>
+              <p className='sm text-center'>Mid-Season SALE only at Olea</p>
+            </article>
+        <div className="overlay-hero"></div>
+        </LazyBackgroundImg>
+
+        {/* <section className='hero-men'
             style={{
                 backgroundImage: `url(${heroImage})`,
                 backgroundSize: 'cover',
@@ -27,13 +37,8 @@ export const MenPage = () => {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-          <article className='hero-content container flex'>
-            <h1 className='text-center'>Men Collection</h1>
-            <div className="underline-title"></div>
-            <p className='sm text-center'>Mid-Season SALE only at Olea</p>
-        </article>
-        <div className="overlay-hero"></div>
-        </section>
+          
+        </section> */}
 
         <CategoryProduct 
           itemsList = { itemsList } 
