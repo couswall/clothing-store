@@ -28,7 +28,7 @@ export const ProductView = () => {
                 <div className="product-wrapper grid">
                   
                   <div className="product-image-container animate__animated animate__fadeIn">
-                    <img src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={item.description} />
+                    <img src={`/assets/${ item.genre }/${ item.productName }.jpg`} alt={item.description} loading='lazy'/>
                   </div>
 
                   <div className="product-information-wrapper">
