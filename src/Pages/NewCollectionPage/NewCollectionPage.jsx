@@ -4,6 +4,7 @@ import  heroImage  from "/assets/hero-new-collection.jpg";
 import './NewCollectionPage.css';
 import { getItemsByGenre } from '../../helpers/getItemsByGenre';
 import { Features } from '../../UI/components/Features/Features';
+import { LazyBackgroundImg } from '../../UI/components/LazyBackgroundImg/LazyBackgroundImg';
 
 export const NewCollectionPage = () => {
   
@@ -12,24 +13,16 @@ export const NewCollectionPage = () => {
 
   return (
     <>
-     
-     <section 
-            className="hero-new-collection section"
-            style={{
-                backgroundImage: `url(${heroImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-        }}  
-            >
-            <article className='hero-content container flex'>
-                <h1 className='text-center'>New Collection</h1>
-                <div className="underline-title"></div>
-            </article>
-            <div className="overlay-hero"></div>
-        </section>
-      
 
+    <LazyBackgroundImg imgUrl={heroImage} cssClass='hero-new-collection'>
+        <article className='hero-content container flex'>
+            <h1 className='text-center'>New Collection</h1>
+            <div className="underline-title"></div>
+        </article>
+        <div className="overlay-hero"></div>
+    </LazyBackgroundImg>
+
+    
       <Carousel listItems={ listItemsWomen } title= 'Women' id='women'/>
       <Carousel listItems={ listItemsMen } title= 'Men' id='men'/>
       
