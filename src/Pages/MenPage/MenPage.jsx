@@ -29,17 +29,6 @@ export const MenPage = () => {
         <div className="overlay-hero"></div>
         </LazyBackgroundImg>
 
-        {/* <section className='hero-men'
-            style={{
-                backgroundImage: `url(${heroImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }}
-        >
-          
-        </section> */}
-
         <CategoryProduct 
           itemsList = { itemsList } 
           arrayOfCategories={ arrayOfCategories }

@@ -5,6 +5,7 @@ import { Item } from '../../UI/components/Item/Item';
 import heroImage from "/assets/store-hero-image.jpg";
 import './StorePage.css';
 import { Features } from '../../UI/components/Features/Features';
+import { LazyBackgroundImg } from '../../UI/components/LazyBackgroundImg/LazyBackgroundImg';
 
 export const StorePage = () => {
 
@@ -57,21 +58,15 @@ export const StorePage = () => {
 
   return (
     <>
-        <section 
-            className="hero-store section"
-            style={{
-                backgroundImage: `url(${heroImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-        }}  
-            >
+
+        <LazyBackgroundImg imgUrl={heroImage} cssClass='hero-store'>
             <article className='hero-content container flex'>
                 <h1 className='text-center'>Store</h1>
                 <div className="underline-title"></div>
             </article>
             <div className="overlay-hero"></div>
-        </section>
+        </LazyBackgroundImg>
+
         
         <section className="categories-product-section section">
             <div className="container">
