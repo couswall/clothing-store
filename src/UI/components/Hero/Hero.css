@@ -97,7 +97,7 @@
 @media (max-width: 575.98px) { 
 
     .hero-section-img{
-        background-position: center !important;
+        object-position: center !important;
     }
 
     .hero-content h1{
